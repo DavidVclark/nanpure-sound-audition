@@ -1,6 +1,9 @@
 NANPURE WRLD Sound Audition Gallery
 Isolated approval preview. Not the playable game and not approved production audio.
 Original synthesized sound designs and NANPURE WRLD tile artwork.
+Owner-supplied downloaded recordings are credited to their providers in imports.json.
+Original downloaded files stay private; public audition copies have explicit processing metadata.
+Pixabay origin confirmed by owner; exact-page verification varies. Production approval remains pending.
 Montserrat SemiBold and numeral outlines: SIL Open Font License; see assets/Montserrat-OFL.txt.
 Favorites are stored only in this browser, under nanpure.soundAudition.v1.
 No analytics, game save access, background music, service worker, or third-party runtime requests.

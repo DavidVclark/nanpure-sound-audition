@@ -1,0 +1,25 @@
+{
+  "project": "NANPURE WRLD",
+  "catalog": "sound-audition-v2",
+  "approvedForProduction": false,
+  "selections": {
+    "selection": "F",
+    "placement": "H",
+    "erase": "B",
+    "row": "C",
+    "column": "C",
+    "box": "C",
+    "victory": "D",
+    "multi": "E",
+    "notes": "D",
+    "scanner": "D",
+    "reveal": "D",
+    "arrow": "F",
+    "bomb": "D",
+    "failure": "D",
+    "retry": "E",
+    "settings": null,
+    "confirm": null,
+    "navigate": null
+  }
+}
