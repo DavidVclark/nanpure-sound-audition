@@ -1,0 +1,596 @@
+[
+  {
+    "id": "selection",
+    "title": "Tile selection",
+    "group": "Touch",
+    "description": "Barely audible contact; C intentionally silent.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/selection-A.wav",
+        "durationMs": 80,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/selection-B.wav",
+        "durationMs": 77,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Silence",
+        "description": "No selection sound; intentional quiet.",
+        "url": "audio/selection-C.wav",
+        "durationMs": 80,
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "placement",
+    "title": "Number placement",
+    "group": "Touch",
+    "description": "Rounded ceramic contact without a sharp click.",
+    "demo": true,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/placement-A.wav",
+        "durationMs": 85,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/placement-B.wav",
+        "durationMs": 105,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/placement-C.wav",
+        "durationMs": 115,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "erase",
+    "title": "Number erasure",
+    "group": "Touch",
+    "description": "A gentle downward release.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/erase-A.wav",
+        "durationMs": 180,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/erase-B.wav",
+        "durationMs": 173,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/erase-C.wav",
+        "durationMs": 194,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "row",
+    "title": "Row completion",
+    "group": "Rewards",
+    "description": "Two rising notes, compact and warm.",
+    "demo": true,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/row-A.wav",
+        "durationMs": 420,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/row-B.wav",
+        "durationMs": 403,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/row-C.wav",
+        "durationMs": 454,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "column",
+    "title": "Column completion",
+    "group": "Rewards",
+    "description": "A related two-note answer in a higher register.",
+    "demo": true,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/column-A.wav",
+        "durationMs": 440,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/column-B.wav",
+        "durationMs": 422,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/column-C.wav",
+        "durationMs": 475,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "box",
+    "title": "3\u00d73 box completion",
+    "group": "Rewards",
+    "description": "Three soft notes opening into a small flourish.",
+    "demo": true,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/box-A.wav",
+        "durationMs": 500,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/box-B.wav",
+        "durationMs": 550,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/box-C.wav",
+        "durationMs": 590,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "victory",
+    "title": "Full puzzle completion",
+    "group": "Rewards",
+    "description": "A resolving musical signature with a rounded tail.",
+    "demo": true,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/victory-A.wav",
+        "durationMs": 1600,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/victory-B.wav",
+        "durationMs": 1536,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/victory-C.wav",
+        "durationMs": 1728,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "multi",
+    "title": "Combined sections",
+    "group": "Rewards",
+    "description": "One fuller response for simultaneous sections, never stacked clips.",
+    "demo": true,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/multi-A.wav",
+        "durationMs": 580,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/multi-B.wav",
+        "durationMs": 557,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/multi-C.wav",
+        "durationMs": 626,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "notes",
+    "title": "Notes activation",
+    "group": "Artifacts",
+    "description": "A light paper-like brush with a tiny tonal finish.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/notes-A.wav",
+        "durationMs": 240,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/notes-B.wav",
+        "durationMs": 230,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/notes-C.wav",
+        "durationMs": 259,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "scanner",
+    "title": "Scanner activation",
+    "group": "Artifacts",
+    "description": "A soft scanning sweep with a clear arrival.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/scanner-A.wav",
+        "durationMs": 480,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/scanner-B.wav",
+        "durationMs": 461,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/scanner-C.wav",
+        "durationMs": 518,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "reveal",
+    "title": "Reveal activation",
+    "group": "Artifacts",
+    "description": "A luminous opening, not a piercing sparkle.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/reveal-A.wav",
+        "durationMs": 560,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/reveal-B.wav",
+        "durationMs": 538,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/reveal-C.wav",
+        "durationMs": 605,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "arrow",
+    "title": "Arrow activation",
+    "group": "Artifacts",
+    "description": "A smooth directional sweep and soft contact.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/arrow-A.wav",
+        "durationMs": 340,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/arrow-B.wav",
+        "durationMs": 326,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/arrow-C.wav",
+        "durationMs": 367,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "bomb",
+    "title": "Bomb activation",
+    "group": "Artifacts",
+    "description": "A cushioned low bloom, no explosive crack.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/bomb-A.wav",
+        "durationMs": 550,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/bomb-B.wav",
+        "durationMs": 528,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/bomb-C.wav",
+        "durationMs": 594,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "failure",
+    "title": "Level failure",
+    "group": "Transitions",
+    "description": "A gentle descending acknowledgement, without a buzzer.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/failure-A.wav",
+        "durationMs": 480,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/failure-B.wav",
+        "durationMs": 461,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/failure-C.wav",
+        "durationMs": 518,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "retry",
+    "title": "Play Again",
+    "group": "Transitions",
+    "description": "A soft reset followed by a fresh upward turn.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/retry-A.wav",
+        "durationMs": 340,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/retry-B.wav",
+        "durationMs": 326,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/retry-C.wav",
+        "durationMs": 367,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "settings",
+    "title": "Settings",
+    "group": "Interface",
+    "description": "A quiet, rounded opening cue.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/settings-A.wav",
+        "durationMs": 120,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/settings-B.wav",
+        "durationMs": 115,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/settings-C.wav",
+        "durationMs": 130,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "confirm",
+    "title": "Menu confirmation",
+    "group": "Interface",
+    "description": "A small affirmative pair.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/confirm-A.wav",
+        "durationMs": 200,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/confirm-B.wav",
+        "durationMs": 192,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/confirm-C.wav",
+        "durationMs": 216,
+        "silent": false
+      }
+    ]
+  },
+  {
+    "id": "navigate",
+    "title": "Level / Home navigation",
+    "group": "Interface",
+    "description": "A restrained transition between screens.",
+    "demo": false,
+    "options": [
+      {
+        "id": "A",
+        "name": "Pearl & Crystal",
+        "description": "Ceramic body \u00b7 delicate crystal tail",
+        "url": "audio/navigate-A.wav",
+        "durationMs": 260,
+        "silent": false
+      },
+      {
+        "id": "B",
+        "name": "Molten Resonance",
+        "description": "Warm stone body \u00b7 low, soft resonance",
+        "url": "audio/navigate-B.wav",
+        "durationMs": 250,
+        "silent": false
+      },
+      {
+        "id": "C",
+        "name": "Celestial Glass",
+        "description": "Smooth glass body \u00b7 airy harmonics",
+        "url": "audio/navigate-C.wav",
+        "durationMs": 281,
+        "silent": false
+      }
+    ]
+  }
+]

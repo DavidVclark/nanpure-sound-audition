@@ -1,0 +1,6 @@
+NANPURE WRLD Sound Audition Gallery
+Isolated approval preview. Not the playable game and not approved production audio.
+Original synthesized sound designs and NANPURE WRLD tile artwork.
+Montserrat SemiBold and numeral outlines: SIL Open Font License; see assets/Montserrat-OFL.txt.
+Favorites are stored only in this browser, under nanpure.soundAudition.v1.
+No analytics, game save access, background music, service worker, or third-party runtime requests.
