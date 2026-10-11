@@ -38,10 +38,28 @@ async function play(event,option,demonstrate=false){
   if(demonstrate){const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;function frame(t){if(ticket!==generation)return;stats.frames++;const elapsed=(t-origin)/1000;draw(event.id,Math.max(0,elapsed),reduced);if(elapsed>=milestone&&record.firstVisualMs===null)record.firstVisualMs=t;if(elapsed<duration)raf=requestAnimationFrame(frame);}raf=requestAnimationFrame(frame);}
  }catch(e){if(ticket===generation){stop();$('status').textContent='Could not play: '+e.message+'. Tap Play to retry.';}}
 }
-function render(){const e=current();$('title').textContent=e.title;$('description').textContent=e.description;$('options').replaceChildren();$('demoButtons').replaceChildren();$('demo').hidden=!e.demo;for(const o of e.options){const card=document.createElement('article');card.className='option'+(favorites[e.id]===o.id?' chosen':'');card.innerHTML=`<div class="option-head"><b><span class="letter">${o.id}</span>${o.name}</b><button aria-label="Play ${e.title} ${o.id}">Play</button></div><p>${o.description} · ${o.durationMs} ms</p><label><input type="radio" name="favorite" value="${o.id}"> Choose ${o.id} as my favorite</label>`;card.querySelector('button').onclick=()=>play(e,o);const input=card.querySelector('input');input.checked=favorites[e.id]===o.id;input.onchange=()=>{favorites[e.id]=o.id;save();render();};$('options').append(card);const d=document.createElement('button');d.textContent='Demo '+o.id;d.onclick=()=>play(e,o,true);$('demoButtons').append(d);}$('count').textContent=Object.keys(favorites).length+'/18';if(e.demo)draw(e.id,0,false);}
+function render(){
+ const e=current();$('title').textContent=e.title;$('description').textContent=e.description;$('options').replaceChildren();$('demoButtons').replaceChildren();$('demo').hidden=!e.demo;
+ const earlier=document.createElement('details'),heading=document.createElement('summary');heading.textContent='Earlier options · first audition round';earlier.append(heading);earlier.open=['A','B','C'].includes(favorites[e.id]);
+ for(const o of [...e.options.filter(o=>o.round===2),...e.options.filter(o=>o.round!==2)]){
+  const card=document.createElement('article');card.className='option'+(favorites[e.id]===o.id?' chosen':'');
+  card.innerHTML=`<div class="option-head"><b><span class="letter">${o.id}</span>${o.name}</b><button aria-label="Play ${e.title} ${o.id}">Play</button></div><p>${o.description} · ${o.durationMs} ms</p><label><input type="radio" name="favorite" value="${o.id}"> Choose ${o.id} as my favorite</label>`;
+  card.querySelector('button').onclick=()=>play(e,o);const input=card.querySelector('input');input.checked=favorites[e.id]===o.id;
+  input.onchange=()=>{favorites[e.id]=o.id;save();render();};(o.round===2?$('options'):earlier).append(card);
+ }
+ $('options').append(earlier);
+ if(e.demo){
+  const select=document.createElement('select');select.id='demoOption';select.setAttribute('aria-label','Demonstration sound');
+  for(const o of [...e.options.filter(o=>o.round===2),...e.options.filter(o=>o.round!==2)]){const opt=document.createElement('option');opt.value=o.id;opt.textContent=o.id+' · '+o.name;select.append(opt);}
+  if(favorites[e.id])select.value=favorites[e.id];
+  const replay=document.createElement('button');replay.textContent='Replay demonstration';replay.onclick=()=>play(e,e.options.find(o=>o.id===select.value),true);
+  $('demoButtons').append(select,replay);draw(e.id,0,false);
+ }
+ $('count').textContent=Object.keys(favorites).length+'/18';
+}
 function summary(){stop();$('sounds').hidden=true;$('summary').hidden=false;$('soundsTab').setAttribute('aria-pressed','false');$('summaryTab').setAttribute('aria-pressed','true');$('choices').replaceChildren();for(const e of catalog){const c=document.createElement('div');c.className='choice';const o=e.options.find(x=>x.id===favorites[e.id]);c.innerHTML=`<span>${e.title}<br><strong>${o?o.id+' · '+o.name:'Not chosen'}</strong></span><button>Change</button>`;c.querySelector('button').onclick=()=>{$('action').value=e.id;showSounds();};$('choices').append(c);}}
 function showSounds(){$('sounds').hidden=false;$('summary').hidden=true;$('soundsTab').setAttribute('aria-pressed','true');$('summaryTab').setAttribute('aria-pressed','false');render();}
-function exported(){return JSON.stringify({project:'NANPURE WRLD',catalog:'sound-audition-v1',approvedForProduction:false,selections:Object.fromEntries(catalog.map(e=>[e.id,favorites[e.id]||null]))},null,2);}
+function exported(){return JSON.stringify({project:'NANPURE WRLD',catalog:'sound-audition-v2',approvedForProduction:false,selections:Object.fromEntries(catalog.map(e=>[e.id,favorites[e.id]||null]))},null,2);}
 $('export').onclick=()=>{const text=exported();$('exportText').hidden=false;$('exportText').value=text;const blob=new Blob([text],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='nanpure-sound-selections.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 $('copy').onclick=async()=>{const text=exported();$('exportText').hidden=false;$('exportText').value=text;try{await navigator.clipboard.writeText(text);$('status').textContent='Selections copied.';}catch{$('exportText').select();$('status').textContent='Select and copy the export below.';}};
 $('stop').onclick=()=>stop('Stopped.');$('sound').checked=enabled;$('sound').onchange=()=>{enabled=$('sound').checked;save();if(!enabled)stop('Sound off.');};$('action').onchange=()=>{stop();render();};$('soundsTab').onclick=showSounds;$('summaryTab').onclick=summary;
@@ -62,4 +80,4 @@ function draw(kind,time,reduced){
  // Recessed structural section divisions on the full-board demo.
  if(n===9){g.strokeStyle='#417975';g.lineWidth=5;for(let i=3;i<9;i+=3){g.beginPath();g.moveTo(pad+i*step-2,pad);g.lineTo(pad+i*step-2,size-pad);g.moveTo(pad,pad+i*step-2);g.lineTo(size-pad,pad+i*step-2);g.stroke();}}
 }
-Promise.all([fetch('catalog.json').then(r=>r.json()),fetch('assets/numerals.json').then(r=>r.json()),tile.decode()]).then(([data,numerals])=>{catalog=data;paths=Object.fromEntries(Object.entries(numerals).map(([n,p])=>[n,new Path2D(p)]));favorites=Object.fromEntries(Object.entries(favorites).filter(([id,v])=>catalog.some(e=>e.id===id&&e.options.some(o=>o.id===v))));for(const e of catalog){const opt=document.createElement('option');opt.value=e.id;opt.textContent=e.group+' · '+e.title;$('action').append(opt);}render();}).catch(e=>{$('status').textContent='Gallery could not load. Reload to retry. '+e.message;});
+Promise.all([fetch('catalog.json?v=2').then(r=>r.json()),fetch('assets/numerals.json').then(r=>r.json()),tile.decode()]).then(([data,numerals])=>{catalog=data;paths=Object.fromEntries(Object.entries(numerals).map(([n,p])=>[n,new Path2D(p)]));favorites=Object.fromEntries(Object.entries(favorites).filter(([id,v])=>catalog.some(e=>e.id===id&&e.options.some(o=>o.id===v))));for(const e of catalog){const opt=document.createElement('option');opt.value=e.id;opt.textContent=e.group+' · '+e.title;$('action').append(opt);}render();}).catch(e=>{$('status').textContent='Gallery could not load. Reload to retry. '+e.message;});

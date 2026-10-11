@@ -29,6 +29,33 @@
         "url": "audio/selection-C.wav",
         "durationMs": 80,
         "silent": true
+      },
+      {
+        "id": "D",
+        "name": "Ceramic contact",
+        "description": "A tiny cushioned stone touch.",
+        "url": "audio/selection-D.wav",
+        "durationMs": 70,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Velvet touch",
+        "description": "An almost inaudible soft friction stroke.",
+        "url": "audio/selection-E.wav",
+        "durationMs": 80,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Silence",
+        "description": "Intentionally no selection sound.",
+        "url": "audio/selection-F.wav",
+        "durationMs": 80,
+        "silent": true,
+        "round": 2
       }
     ]
   },
@@ -36,7 +63,7 @@
     "id": "placement",
     "title": "Number placement",
     "group": "Touch",
-    "description": "Rounded ceramic contact without a sharp click.",
+    "description": "Six friction-led carving and etching strokes. No placement chimes. First-round taps remain under Earlier options.",
     "demo": true,
     "options": [
       {
@@ -62,6 +89,60 @@
         "url": "audio/placement-C.wav",
         "durationMs": 115,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Ceramic carving",
+        "description": "Dry, grainy contact tracing a short groove.",
+        "url": "audio/placement-D.wav",
+        "durationMs": 105,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Diamond scribe",
+        "description": "A fine moving etch with controlled upper texture.",
+        "url": "audio/placement-E.wav",
+        "durationMs": 95,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Sanded groove",
+        "description": "Broad, soft abrasive friction; no musical ping.",
+        "url": "audio/placement-F.wav",
+        "durationMs": 115,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "G",
+        "name": "Molten etch",
+        "description": "A warm fizz following the cut into stone.",
+        "url": "audio/placement-G.wav",
+        "durationMs": 120,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "H",
+        "name": "Crystal scrape",
+        "description": "A light segmented scraping stroke with a glass edge.",
+        "url": "audio/placement-H.wav",
+        "durationMs": 100,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "I",
+        "name": "Silk tracing",
+        "description": "A quiet, smooth engraving pass with minimal grit.",
+        "url": "audio/placement-I.wav",
+        "durationMs": 110,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -95,6 +176,33 @@
         "url": "audio/erase-C.wav",
         "durationMs": 194,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Felt wipe",
+        "description": "A soft downward wipe, without a chime.",
+        "url": "audio/erase-D.wav",
+        "durationMs": 180,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Stone release",
+        "description": "A brief reverse scrape and quiet lift.",
+        "url": "audio/erase-E.wav",
+        "durationMs": 180,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Dissolving ink",
+        "description": "An airy retreat that gently disappears.",
+        "url": "audio/erase-F.wav",
+        "durationMs": 180,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -128,6 +236,33 @@
         "url": "audio/row-C.wav",
         "durationMs": 454,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Harp pair",
+        "description": "Two warm plucked notes with a rounded body.",
+        "url": "audio/row-D.wav",
+        "durationMs": 420,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Felt piano pair",
+        "description": "A soft piano-like fifth with a low felt attack.",
+        "url": "audio/row-E.wav",
+        "durationMs": 480,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Crystal answer",
+        "description": "Two clear, low glass tones with a small tail.",
+        "url": "audio/row-F.wav",
+        "durationMs": 380,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -161,6 +296,33 @@
         "url": "audio/column-C.wav",
         "durationMs": 475,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Descending harp",
+        "description": "Two descending plucks, distinct from the row rise.",
+        "url": "audio/column-D.wav",
+        "durationMs": 430,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Piano response",
+        "description": "Two mellow piano-like notes in a close interval.",
+        "url": "audio/column-E.wav",
+        "durationMs": 460,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Wooden bell answer",
+        "description": "A pair of dry woody resonances, no sharp clang.",
+        "url": "audio/column-F.wav",
+        "durationMs": 400,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -194,6 +356,33 @@
         "url": "audio/box-C.wav",
         "durationMs": 590,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Harp flourish",
+        "description": "Three plucks opening into a gentle major chord.",
+        "url": "audio/box-D.wav",
+        "durationMs": 520,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Velvet keys",
+        "description": "A three-note piano-like turn in a lower register.",
+        "url": "audio/box-E.wav",
+        "durationMs": 580,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Glass bloom",
+        "description": "Three rounded glass tones spreading softly.",
+        "url": "audio/box-F.wav",
+        "durationMs": 550,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -227,6 +416,33 @@
         "url": "audio/victory-C.wav",
         "durationMs": 1728,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Quiet triumph",
+        "description": "A harp phrase resolving into a warm chord.",
+        "url": "audio/victory-D.wav",
+        "durationMs": 1600,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Pearl fanfare",
+        "description": "A soft piano-like cadence with a restrained pad.",
+        "url": "audio/victory-E.wav",
+        "durationMs": 1800,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Starlight resolution",
+        "description": "A rising bell phrase with an airy final chord.",
+        "url": "audio/victory-F.wav",
+        "durationMs": 1700,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -260,6 +476,33 @@
         "url": "audio/multi-C.wav",
         "durationMs": 626,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Chord release",
+        "description": "One warm plucked chord, rather than stacked effects.",
+        "url": "audio/multi-D.wav",
+        "durationMs": 560,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Piano lift",
+        "description": "A compact low-to-high phrase with a shared landing.",
+        "url": "audio/multi-E.wav",
+        "durationMs": 590,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Crystal cascade",
+        "description": "A short three-note cascade with a clear finish.",
+        "url": "audio/multi-F.wav",
+        "durationMs": 550,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -293,6 +536,33 @@
         "url": "audio/notes-C.wav",
         "durationMs": 259,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Pencil on paper",
+        "description": "Fine graphite friction across a short paper stroke.",
+        "url": "audio/notes-D.wav",
+        "durationMs": 240,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Page fold",
+        "description": "A soft paper flutter and folded-edge contact.",
+        "url": "audio/notes-E.wav",
+        "durationMs": 240,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Ink brush",
+        "description": "A broad dry brush with two gentle strokes.",
+        "url": "audio/notes-F.wav",
+        "durationMs": 240,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -326,6 +596,33 @@
         "url": "audio/scanner-C.wav",
         "durationMs": 518,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Sonar arc",
+        "description": "A rounded low sweep resolving into a tiny pulse.",
+        "url": "audio/scanner-D.wav",
+        "durationMs": 460,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Prism sweep",
+        "description": "A smooth band of filtered air moving upward.",
+        "url": "audio/scanner-E.wav",
+        "durationMs": 460,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Lens focus",
+        "description": "Three quiet focus pulses with a soft arrival.",
+        "url": "audio/scanner-F.wav",
+        "durationMs": 460,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -359,6 +656,33 @@
         "url": "audio/reveal-C.wav",
         "durationMs": 605,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Light opening",
+        "description": "An airy opening followed by a warm held note.",
+        "url": "audio/reveal-D.wav",
+        "durationMs": 560,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Crystal reveal",
+        "description": "A delicate bell dyad opening from the center.",
+        "url": "audio/reveal-E.wav",
+        "durationMs": 560,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Ember glow",
+        "description": "A low resonant swell without a sparkle spike.",
+        "url": "audio/reveal-F.wav",
+        "durationMs": 560,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -392,6 +716,33 @@
         "url": "audio/arrow-C.wav",
         "durationMs": 367,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Silken glide",
+        "description": "A directional air sweep with a restrained landing.",
+        "url": "audio/arrow-D.wav",
+        "durationMs": 320,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Stone slide",
+        "description": "A textured sliding motion and a muted stop.",
+        "url": "audio/arrow-E.wav",
+        "durationMs": 320,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Prism pass",
+        "description": "A short smooth frequency glide with a rounded finish.",
+        "url": "audio/arrow-F.wav",
+        "durationMs": 320,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -425,6 +776,33 @@
         "url": "audio/bomb-C.wav",
         "durationMs": 594,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Cushioned burst",
+        "description": "A low pressure release with a soft airy tail.",
+        "url": "audio/bomb-D.wav",
+        "durationMs": 520,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Stone bloom",
+        "description": "Muted granular stone movement, no explosive crack.",
+        "url": "audio/bomb-E.wav",
+        "durationMs": 520,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Deep resonance",
+        "description": "A warm descending low tone with a rounded body.",
+        "url": "audio/bomb-F.wav",
+        "durationMs": 520,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -458,6 +836,33 @@
         "url": "audio/failure-C.wav",
         "durationMs": 518,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Felt sigh",
+        "description": "A gentle piano-like descending pair.",
+        "url": "audio/failure-D.wav",
+        "durationMs": 480,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Air settling",
+        "description": "A soft downward breath; no negative buzzer.",
+        "url": "audio/failure-E.wav",
+        "durationMs": 480,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Unresolved harp",
+        "description": "A quiet two-note pluck that remains unresolved.",
+        "url": "audio/failure-F.wav",
+        "durationMs": 480,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -491,6 +896,33 @@
         "url": "audio/retry-C.wav",
         "durationMs": 367,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Stone reset",
+        "description": "A short sweep followed by a soft seated contact.",
+        "url": "audio/retry-D.wav",
+        "durationMs": 320,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Fresh page",
+        "description": "A papery transition and a quiet upward brush.",
+        "url": "audio/retry-E.wav",
+        "durationMs": 320,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "New beginning",
+        "description": "A warm plucked rise into the next attempt.",
+        "url": "audio/retry-F.wav",
+        "durationMs": 320,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -524,6 +956,33 @@
         "url": "audio/settings-C.wav",
         "durationMs": 130,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Soft latch",
+        "description": "A dry, cushioned latch contact.",
+        "url": "audio/settings-D.wav",
+        "durationMs": 100,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Air opening",
+        "description": "A short breath opening the panel.",
+        "url": "audio/settings-E.wav",
+        "durationMs": 100,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Wooden touch",
+        "description": "A tiny woody impact with very little tail.",
+        "url": "audio/settings-F.wav",
+        "durationMs": 100,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -557,6 +1016,33 @@
         "url": "audio/confirm-C.wav",
         "durationMs": 216,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Pearl settle",
+        "description": "A rounded contact with a faint low resonance.",
+        "url": "audio/confirm-D.wav",
+        "durationMs": 180,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Quiet affirmation",
+        "description": "A warm, very short plucked pair.",
+        "url": "audio/confirm-E.wav",
+        "durationMs": 180,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Cloth contact",
+        "description": "A soft dry contact without any pitched tail.",
+        "url": "audio/confirm-F.wav",
+        "durationMs": 180,
+        "silent": false,
+        "round": 2
       }
     ]
   },
@@ -590,6 +1076,33 @@
         "url": "audio/navigate-C.wav",
         "durationMs": 281,
         "silent": false
+      },
+      {
+        "id": "D",
+        "name": "Air passage",
+        "description": "A smooth unpitched transition sweep.",
+        "url": "audio/navigate-D.wav",
+        "durationMs": 260,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "E",
+        "name": "Warm arrival",
+        "description": "A brief piano-like pair with a soft landing.",
+        "url": "audio/navigate-E.wav",
+        "durationMs": 260,
+        "silent": false,
+        "round": 2
+      },
+      {
+        "id": "F",
+        "name": "Stone glide",
+        "description": "A muted sliding texture that settles quietly.",
+        "url": "audio/navigate-F.wav",
+        "durationMs": 260,
+        "silent": false,
+        "round": 2
       }
     ]
   }
